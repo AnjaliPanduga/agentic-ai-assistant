@@ -1,5 +1,5 @@
 import streamlit as st
-from agents.main_agent import agent_decision
+from agents.planner_agent import planner_agent
 from tools.file_analyzer import analyze_file
 from tools.data_agent import analyze_data
 from utils.memory import add_memory, get_memory, clear_memory
@@ -39,7 +39,7 @@ user_input = st.chat_input("Ask anything...")
 
 # 🔥 FIX: pass file_content to agent
 if user_input:
-    response = agent_decision(user_input, file_content)
+    response = planner_agent(user_input, file_content)
 
     add_memory(user_input, response)
 
