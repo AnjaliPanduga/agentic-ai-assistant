@@ -1,6 +1,6 @@
 # 🤖 Agentic AI Assistant for Real-Time Problem Solving
 
-An intelligent multi-model AI assistant built using **Groq + Gemini APIs** that can solve real-time problems, debug code, and analyze files using a modular agent-based architecture.
+An intelligent **multi-agent AI assistant** built using **Groq + Gemini APIs** that can solve real-time problems, debug code, and analyze files using a scalable agent-based architecture.
 
 ---
 
@@ -8,12 +8,12 @@ An intelligent multi-model AI assistant built using **Groq + Gemini APIs** that 
 
 * ⚡ Ultra-fast responses using Groq API
 * 🧠 Advanced reasoning using Gemini API
+* 🤖 Multi-Agent Architecture (Planner + Specialized Agents)
 * 🛠️ Code debugging assistant
 * 📂 File analysis (CSV, PDF, TXT)
 * 📊 Data insights using Pandas
-* 🧠 Intelligent agent decision-making
 * 💬 Chat memory support
-* 🧩 Modular architecture (scalable & clean)
+* 🧩 Modular and scalable design
 
 ---
 
@@ -31,13 +31,13 @@ Developers, students, and data professionals often face challenges such as:
 
 ## 💡 Solution
 
-This project solves these problems by building an **Agentic AI system** that:
+This project solves these problems by building a **Multi-Agent AI System** that:
 
-* Understands user queries intelligently
-* Routes tasks to the best model (Groq for speed ⚡, Gemini for reasoning 🧠)
-* Processes uploaded files and gives context-aware answers
-* Combines multiple capabilities (chat, debugging, analysis) into one system
-* Acts as a unified AI assistant for real-world problem solving
+* Uses a **Planner Agent** to understand user intent
+* Routes tasks to specialized agents (Code, Data, File, General)
+* Leverages **Groq for speed ⚡** and **Gemini for reasoning 🧠**
+* Processes uploaded files and provides context-aware responses
+* Combines multiple capabilities into a unified intelligent assistant
 
 ---
 
@@ -46,12 +46,17 @@ This project solves these problems by building an **Agentic AI system** that:
 ```
 agentic-ai-assistant/
 │
-├── app.py                  # Streamlit UI
-├── .gitignore                   
+├── app.py
+├── .gitignore
 ├── requirements.txt
 ├── .env (not pushed)
+│
 ├── agents/
-│   └── main_agent.py       # Decision-making logic
+│   ├── planner_agent.py      # Main decision maker
+│   ├── code_agent.py         # Code debugging
+│   ├── data_agent.py         # Data analysis
+│   ├── file_agent.py         # File processing
+│   └── general_agent.py      # General queries
 │
 ├── models/
 │   ├── gemini_model.py
@@ -120,21 +125,21 @@ This project is deployed using Streamlit Cloud.
 
 ## 💯 Key Highlights
 
-* Multi-model AI system (Groq + Gemini)
+* Multi-Agent AI System with task-specific agents
 * Real-time intelligent responses
 * Modular and scalable architecture
-* Handles multiple tasks in one system
-* File-aware AI assistant
+* Handles multiple tasks in a single platform
+* File-aware and context-aware assistant
 
 ---
 
 ## 🚀 Future Enhancements
 
-* 🔄 Auto tool selection (true agent behavior)
+* 🔄 AI-based planner (LLM decision making)
 * 🎤 Voice-based interaction
 * 🌐 Web search integration
 * 🧠 Vector database memory (FAISS)
-* 🤖 Multi-agent collaboration system
+* 🤖 Advanced multi-agent collaboration
 
 ---
 
@@ -142,10 +147,8 @@ This project is deployed using Streamlit Cloud.
 
 For any queries, reach out via GitHub.
 
-📧 Email: pandugaanjali2003@gmail.com
-
+📧 Email: [pandugaanjali2003@gmail.com](mailto:pandugaanjali2003@gmail.com)
 🔗 GitHub: https://github.com/AnjaliPanduga
-
 
 ---
 
