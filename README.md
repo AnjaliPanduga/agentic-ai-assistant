@@ -1,4 +1,4 @@
-# 🤖 Agentic AI Assistant for Real-Time Problem Solving
+# 🤖 Multi-Agent AI System for Document Analysis & Query Resolution
 
 An intelligent **multi-agent AI assistant** built using **Groq + Gemini APIs** that can solve real-time problems, debug code, and analyze files using a scalable agent-based architecture.
 
